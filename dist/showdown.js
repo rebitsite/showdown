@@ -4634,7 +4634,7 @@ showdown.subParser('makeMarkdown.node', function (node, globals, spansOnly) {
       break;
 
     case 'img':
-      txt = showdown.subParser('makeMarkdown.image')(node, globals);
+      txt = showdown.subParser('makeMarkdown.image')(node, globals) + '\n\n';
       break;
 
     default:
